@@ -1,3 +1,6 @@
+require(httr2)
+require(glue)
+
 get_aoc_input <- function(year, day, verbose = FALSE, force_update = FALSE) {
    local_file = glue::glue("inputs/input-{day}.txt")
    uri <- glue::glue("https://adventofcode.com/{year}/day/{day}/input", year = year, day = day)

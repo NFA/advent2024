@@ -1,4 +1,4 @@
-library(httr2)
+
 
 if(!exists("get_aoc_input", mode="function")) source("util.R")
 
