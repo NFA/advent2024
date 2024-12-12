@@ -18,7 +18,7 @@ sort_page <- function(page) {
    page_length <- length(page)
    for (p in 1:page_length) {
       followed_rule <- FALSE
-      for (pp in 1:(p - 1)) {
+      for (pp in 1:(page_length - 1)) {
          rule <- rules[which(rules$V1 == page[pp]),]$V2
          cat("with rule: ", rule, "\n\t")
          if (!page[pp + 1] %in% rule) {
